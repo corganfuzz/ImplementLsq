@@ -7,25 +7,33 @@ import java.util.*;
 public class Lsq {
 
     static void userSelection() throws Exception {
+        while (true) {
         System.out.println("\n======BASIC OPTIONS=======\n");
-        Scanner input = new Scanner(System.in);
-        System.out.println("1. Reverse \n2. Convert \n3. Compare");
-        System.out.print("\nMake your selection: ");
-        int selection = input.nextInt();
-        System.out.println("\nThe selected file is states.txt");
+            Scanner input = new Scanner(System.in);
+            System.out.println("1. Reverse \n2. Convert \n3. Compare");
+            System.out.print("\nMake your selection: ");
+            int selection = input.nextInt();
+            System.out.println("\nThe selected file is: states.txt");
 
-        if (selection == 1) {
-            System.out.println("The file contents have been popped and reversed");
-            reversePopStack();
-        } else if (selection == 2) {
-            System.out.println("The file contents have been dequeue and converted");
-            dequeueUpperLinked();
-        } else if (selection == 3) {
-            compareQ();
-        } else {
-            System.out.println("Invalid Option only 1, 2 or 3 allowed");
+            if (selection == 1) {
+                System.out.println("The file contents have been popped and reversed");
+                reversePopStack();
+            } else if (selection == 2) {
+                System.out.println("The file contents have been dequeue and converted");
+                dequeueUpperLinked();
+            } else if (selection == 3) {
+                try {
+                    compareQ();
+                } catch (Exception e) {
+                    System.out.println("""
+                            ERROR: You need 2 .txt files to perform this step. 
+                            Select step 1 and 2 to get them.""");
+                }
+            } else {
+                System.exit(0);
+                System.out.println("Invalid Option only 1, 2 or 3 allowed");
+            }
         }
-
     }
 
     static void writeToFile(String data, String filename) {
