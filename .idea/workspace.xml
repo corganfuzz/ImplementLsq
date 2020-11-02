@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="da837a16-ed4f-4e95-96e4-847adf6c583e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1jhFLnGgjvGeTxfKISwNebfOgUC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lsq.Lsq" />
+      <module name="ImplementLsq" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="da837a16-ed4f-4e95-96e4-847adf6c583e" name="Default Changelist" comment="" />
+      <created>1604248362676</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604248362676</updated>
+      <workItem from="1604248363726" duration="19796000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="4522" y="1544" width="786" height="754" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1604270580612">
+      <screen x="3840" y="0" width="2160" height="3840" />
+    </state>
+    <state x="4522" y="1544" width="786" height="754" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/6000.383.3840.2160/0.421.3840.2039/3840.0.2160.3840@3840.0.2160.3840" timestamp="1604270580612" />
+    <state width="2082" height="1116" key="GridCell.Tab.0.bottom" timestamp="1604278455500">
+      <screen x="3840" y="0" width="2160" height="3840" />
+    </state>
+    <state width="2082" height="1116" key="GridCell.Tab.0.bottom/6000.383.3840.2160/0.421.3840.2039/3840.0.2160.3840@3840.0.2160.3840" timestamp="1604278455500" />
+    <state width="2082" height="1116" key="GridCell.Tab.0.center" timestamp="1604278455500">
+      <screen x="3840" y="0" width="2160" height="3840" />
+    </state>
+    <state width="2082" height="1116" key="GridCell.Tab.0.center/6000.383.3840.2160/0.421.3840.2039/3840.0.2160.3840@3840.0.2160.3840" timestamp="1604278455500" />
+    <state width="2082" height="1116" key="GridCell.Tab.0.left" timestamp="1604278455500">
+      <screen x="3840" y="0" width="2160" height="3840" />
+    </state>
+    <state width="2082" height="1116" key="GridCell.Tab.0.left/6000.383.3840.2160/0.421.3840.2039/3840.0.2160.3840@3840.0.2160.3840" timestamp="1604278455500" />
+    <state width="2082" height="1116" key="GridCell.Tab.0.right" timestamp="1604278455500">
+      <screen x="3840" y="0" width="2160" height="3840" />
+    </state>
+    <state width="2082" height="1116" key="GridCell.Tab.0.right/6000.383.3840.2160/0.421.3840.2039/3840.0.2160.3840@3840.0.2160.3840" timestamp="1604278455500" />
+  </component>
+</project>
