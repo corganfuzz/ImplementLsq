@@ -2,6 +2,8 @@ package lsq;
 
 import java.io.FileReader;
 import java.io.PrintWriter;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -19,7 +21,8 @@ public class Lsq {
             System.out.println("The file contents have been popped and reversed");
             reversePopStack();
         } else if (selection == 2) {
-            System.out.println("Convert function");
+            System.out.println("The file contents have been dequeue and converted");
+            dequeueUpperLinked();
         } else if (selection == 3) {
             System.out.println("Compare function");
         } else {
@@ -28,7 +31,12 @@ public class Lsq {
 
     }
 
-    static void writeToFile(Stack<Character> data, String filename) {
+    static String readTextFile() throws Exception {
+        Scanner sc = new Scanner(new FileReader("states.txt"));
+        return sc.nextLine();
+    }
+
+    static void writeToFile(String data, String filename) {
             try {
                 PrintWriter output = new PrintWriter(filename);
                 output.println(data);
@@ -39,30 +47,39 @@ public class Lsq {
             }
     }
 
+    static void dequeueUpperLinked() throws Exception {
+        String queueSavedFile = "queueUpper.txt";
+        String stringFromFile = readTextFile();
+        Queue<Character> myQ = new LinkedList<>();
+        for(char c: stringFromFile.toCharArray()) {
+            myQ.add(c);
+        }
+
+        String qOutput = "";
+        while (myQ.peek() != null) {
+            qOutput = (qOutput + myQ.remove());
+            System.out.println(qOutput.toUpperCase());
+        }
+        writeToFile(qOutput.toUpperCase(), queueSavedFile);
+        System.out.println("\nThis content have been written to " + queueSavedFile + ", located at the root folder");
+
+
+    }
+
     static void reversePopStack() throws Exception {
-        String filename = "reversedStack.txt";
-        Scanner sc = new Scanner(new FileReader("states.txt"));
-        String stringFromFile = sc.nextLine();
+        String reversedSavedFile = "reversedStack.txt";
+        String stringFromFile = readTextFile();
         Stack<Character> myStack = new Stack<>();
         for(char c: stringFromFile.toCharArray()) {
             myStack.push(c);
         }
-        myStack.pop();
         String outputChar = "";
         while(!myStack.isEmpty()) {
             outputChar += myStack.pop();
+            System.out.println(outputChar);
         }
-        Stack<Character> reverseResult = new Stack<>();
-        for(char o: outputChar.toCharArray()) {
-            reverseResult.push(o);
-        }
-        System.out.println(reverseResult);
-        System.out.println("\nThis content have been written to " + filename + ", located at the root folder");
-        writeToFile(reverseResult, filename);
-    }
-
-    static void dequeueUperLinked() {
-
+        writeToFile(outputChar, reversedSavedFile);
+        System.out.println("\nThis content have been written to " + reversedSavedFile + ", located at the root folder");
     }
 
     public static void main(String[] args) throws Exception {
